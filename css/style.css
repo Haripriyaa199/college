@@ -1,0 +1,320 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family:serif ;
+	transition: 0.5s;
+}
+.dropdwn{
+	margin: 0 auto;
+}
+nav{
+	height: 60px;
+	background: #5a6369;
+	box-shadow: 0 10px 15px rgb(0,0,0,0.1);
+}
+.logo{
+	width: 145px;
+	height: 96px;
+	padding: 1px;
+	margin-left: 58px;
+}
+nav ul{
+	padding: 0;
+	margin: 0;
+	float: right;
+	margin-right: 30px;
+}
+nav ul li{
+	background: #5a6369;
+	position: relative;
+	list-style: none;
+	display: inline-block;
+}
+nav ul li a{
+	display: block;
+	padding: 0 35px;
+	color: white;
+	text-decoration: none;
+	line-height: 60px;
+	font-size: 15px;
+}
+nav ul li a:hover{
+	background: white;
+	color: black;
+}
+nav ul ul{
+	position: absolute;
+	display: none;
+	top: 60px;
+}
+nav ul li:hover > ul{
+	display: block;
+}
+nav ul ul li{
+	width: 150px;
+	float: none;
+	display: list-item;
+}
+.loginbtn{
+	float: right;
+	width: 100px;
+	height: 35px;
+	color: black;
+	font-size: 17px;
+	padding: 6px;
+	margin-top: 5px;
+	margin-right: 35px;
+}
+.top{
+	background: #ffff00;
+	width: 100%;
+	height: 4rem;
+}
+.box{
+	background: #6f42c1;
+	width: 50%;
+	padding-top: 30vh;
+	height: 500px;   
+}
+.header1{
+	width: 100%;
+	height: 550px;
+	background-image: linear-gradient(#000000c3,#000000c3), url("girl.png");
+	text-align: center;
+	color: white;
+	padding-top: 10vh;
+	font-size: 20px;
+	word-spacing: 5px;
+}
+.header1 h1{
+	font-family: serif;
+	margin-bottom: 20px;
+}
+.header1 p{
+	letter-spacing: 5px;
+}
+.header1 button{
+	padding: 10px;
+	background: none;
+	border: 1px solid yellow;
+	color: white;
+}
+.header1 button:hover{
+	color: white;
+	background: #f80;
+}
+.mvv-container{
+	max-width: 90%;
+	margin: 50px auto;
+}
+.mvv-container .mvv-block{
+	margin-bottom: 50px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap ;
+}
+.mvv-container .mvv-block .image{
+	flex-wrap: 0 0 auto;
+	width: 400px;
+}
+.mvv-container .mvv-block .image img{
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, .3);
+
+}
+.mvv-container .mvv-block .content{
+	flex-wrap: 0 0 auto;
+	width: calc(100% - 400px);
+	box-sizing: border-box;
+}
+@media screen and (min-width: 1024px)
+{
+	.mvv-container .mvv-block:nth-child(odd) .image
+	{
+		order: 1;
+	}
+	.mvv-container .mvv-block:nth-child(even) .image
+	{
+		order: 2;
+	}
+	.mvv-container .mvv-block:nth-child(odd) .content
+	{
+		order: 2;
+		padding-left: 30px;
+	}
+	.mvv-container .mvv-block:nth-child(odd) .content
+	{
+		order: 1;
+		padding-right: 30px;
+	}
+}
+footer{
+	bottom: 0px;
+	max-width: 100%;
+	background: #5a6369;
+	color:white;
+	height: 30vh;
+	padding-left: 20px;
+	padding-top: 12px;
+}
+.main-content{
+	display: flex;
+}
+.main-content .left{
+	flex-basis: 50%;
+	padding: 10px 20px;
+}
+.box1 h2{
+	font-size: 1.125rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.box1 .content{
+	margin: 20px 165px 12px 0;
+	width: 70%;
+}
+.box1 .content p{
+	text-align: justify;
+}
+.box1 .content .social{
+	margin: 20px 0 0 0;
+}
+.box1 .content .social{
+	padding: 0 20px;
+}
+.box1 .content .social a span{
+	height: 40px;
+	width: 40px;
+	background: #1a1a1a;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 5px;
+}
+
+.box1 .content .social a span:hover{
+	background: red;
+}
+.block{
+	width: 100%;
+	height: 600px;
+}
+.block .block1{
+	padding: 1.25rem;
+	width: 97%;
+	height: 600px;
+	background-image: url("old.jpg");
+	background-size: cover;
+	text-align: center;
+	color: black;
+	display: inline-block;
+	padding-top: 10vh;
+	font-size: 20px;
+	word-spacing: 5px;
+
+}
+p{
+	margin: 20px;
+	text-align: justify;
+}
+.block3{
+	width: 20%;
+	height: 70%;
+	margin-top: 50px;
+	margin-left: 45px;
+	padding: 50px;
+	display: inline-block;
+}
+
+
+
+
+
+/* ------------media Query---------------- */
+nav .fa-bars {
+    display: none;
+}
+nav .fa-xmark{
+    display: none;
+}
+@media only screen and (max-width:480px){
+	.logo{
+		width: 50px;
+		height: 60px;
+	}
+	.header1{
+		background-size: 100%;
+		background-repeat: no-repeat;
+		height: auto;
+		
+	}
+	nav .fa-bars {
+        display: block;
+        font-size: 30px;
+        color: #fff;
+    }
+    nav .fa-xmark{
+        display: block;
+        font-size: 30px;
+        color: #fff;
+    }
+	nav ul{
+        background: #000;
+        position: fixed;
+        top: 0;
+        left: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-xmark{
+        position: absolute;
+        top:25px;
+        left: 25px;
+        cursor: pointer;
+    }
+	.loginbtn{
+		margin-right: 7px;
+	}
+	.mvv-container .mvv-block .content{
+		flex-wrap: 0 0 auto;
+		width: calc(100%);
+		box-sizing: border-box;
+	}
+	.mvv-container .mvv-block .content h2{
+		text-align: center;
+	}
+	.mvv-container .mvv-block:nth-child(odd) .image
+	{
+		order: 2;
+	}
+	.mvv-container .mvv-block:nth-child(even) .image
+	{
+		order: 1;
+	}
+	.mvv-container .mvv-block:nth-child(odd) .content
+	{
+		order: 2;
+		padding-left: 20px;
+	}
+	.mvv-container .mvv-block:nth-child(odd) .content
+	{
+		order: 1;
+		padding-right: 20px;
+	}
+	footer{
+		width: 50rem;	
+		height: 55vh;
+	}
+	.main-content{
+		display: list-item;
+		margin-left: 30px;
+	}
+}
